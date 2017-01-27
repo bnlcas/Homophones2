@@ -1,0 +1,2 @@
+for i in $(ls *.png); do fne='.pdf'; sips -s format pdf $i --out $(basename $i .png)$fne; done
+PDFconcat -o combined_pdf.pdf *.pdf
